@@ -58,11 +58,11 @@ const cats = [
 ];
 let list;
 function catsArray(list) {
-	for (let list = 0; list < cats.length; list++) {
-		console.log(cats[list].name);
-	}
+    for (let i = 0; i < list.length; i++) {
+        console.log(list[i].name);
+    }
 }
-catsArray();
+catsArray(cats);
 // Question 8
 // Create a function called createCats. The function will have one parameter called cats.
 // Inside the function loop through the value passed in as cats and create HTML for each object in the array.
