@@ -87,5 +87,9 @@ function createCats(cats) {
 	return catHTML;
 }
 
-const HTML = createCats(cats);
-resultsContainer.innerHTML = HTML;
+const newHtml = createCats(cats);
+console.log(newHtml);
+
+const container = document.querySelector('.cat-container');
+container.innerHTML = newHtml;
+
