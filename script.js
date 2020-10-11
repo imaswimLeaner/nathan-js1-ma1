@@ -77,12 +77,14 @@ catsArray();
 function createCats(cats) {
 	let catHTML = '';
 	for (var i = 0; i < cats.length; i++) {
-		let catAge = 'Age unknown';
+		let catAge = 'Unknown';
 		if (cats[i].age) {
 			catAge = cats[i].age;
 		}
-		catHTML += `<h5>${cats[i].name}</h5>
-                    <p>${catAge}</p>`;
+		catHTML += `<div>
+			<h5>Age : ${cats[i].name}</h5>
+                    	<p>${catAge}</p>
+			</div>`;
 	}
 	return catHTML;
 }
